@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(253, 253, 253);
+    color: white; /* As letras no corpo terão a cor branca */
+    gap: 20px;
+}
+
+.location h1{
+    color: teal;
+}
+
+
+#container {
+    background-color: transparent; /* Transparente com cor suave de fundo */
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #020008;
+    border-radius: 10px;
+    padding: 4px 12px;
+}
+
+#search input {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: rgb(0, 0, 0); /* Letras brancas no campo de entrada */
+    width: 100%;
+    outline: none;
+}
+
+#search input:focus-visible {
+    outline: none;
+}
+
+#search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#weather {
+    display: none;
+    margin-top: 20px;   
+}
+
+#weather.show {
+    display: block;
+}
+
+#weather #title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);; /* Letras brancas no título */
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    color: teal; /* Letras brancas no temp */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#temp_img {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+#temp_value {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+#temp_description {
+    font-weight: 500;
+    text-transform: capitalize;
+}
